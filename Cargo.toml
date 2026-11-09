@@ -1,0 +1,19 @@
+[package]
+name = "crc32c-wal"
+version = "0.1.0"
+edition = "2021"
+authors = ["Manish Tula <MANISHTULA7777@GMAIL.COM>"]
+description = "Hardware-accelerated CRC32C (Castagnoli) checksum utility optimized for write-ahead log record validation with SIMD and slice-by-8 fallback."
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/IBEASTMANISH/crc32c-wal"
+documentation = "https://docs.rs/crc32c-wal"
+keywords = ["crc32c", "wal", "checksum", "hardware-acceleration", "no-std"]
+categories = ["algorithms", "no-std", "embedded", "database-implementations"]
+
+[features]
+default = ["std"]
+std = []
+
+[dependencies]
+# Zero external runtime dependencies for maximum no_std compatibility
